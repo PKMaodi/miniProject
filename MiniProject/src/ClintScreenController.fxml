@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="678.0" text="Client Screen" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientScreen">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="399.0" prefWidth="633.0">
+         <children>
+            <Button fx:id="SibmitButtn" layoutX="577.0" layoutY="464.0" mnemonicParsing="false" onAction="#SubmtDe" prefHeight="35.0" prefWidth="79.0" text="Submit">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Button>
+            <Label layoutX="284.0" layoutY="6.0" text="Sender Info" />
+            <Label layoutX="120.0" layoutY="53.0" text="Name" />
+            <TextField fx:id="RNameIn" layoutX="353.0" layoutY="131.0" prefHeight="25.0" prefWidth="155.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Separator layoutX="118.0" layoutY="89.0" prefHeight="0.0" prefWidth="440.0" style="-fx-background-color: blue;" />
+            <Label layoutX="285.0" layoutY="100.0" text="Reciever Info" />
+            <Label layoutX="120.0" layoutY="132.0" prefHeight="23.0" prefWidth="32.0" text="Name" />
+            <Label layoutX="126.0" layoutY="176.0" text="City" />
+            <TextField fx:id="RCityIn" layoutX="354.0" layoutY="172.0" prefHeight="25.0" prefWidth="154.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="SNameIn" layoutX="353.0" layoutY="49.0" prefHeight="25.0" prefWidth="155.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Separator layoutX="116.0" layoutY="231.0" prefHeight="1.0" prefWidth="446.0" style="-fx-background-color: blue;" />
+            <Label layoutX="287.0" layoutY="243.0" text="Parcel Info" />
+            <TextField fx:id="CargWidth" layoutX="353.0" layoutY="312.0" prefHeight="25.0" prefWidth="78.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="CargHeight" layoutX="353.0" layoutY="368.0" prefHeight="25.0" prefWidth="77.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="CargWeight" layoutX="353.0" layoutY="416.0" prefHeight="25.0" prefWidth="77.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <TextField fx:id="CargLength" layoutX="353.0" layoutY="270.0" prefHeight="25.0" prefWidth="77.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </TextField>
+            <Label layoutX="122.0" layoutY="274.0" prefHeight="17.0" prefWidth="61.0" text="Length(cm)" />
+            <Label layoutX="122.0" layoutY="317.0" prefHeight="17.0" prefWidth="57.0" text="Width(cm)" />
+            <Label layoutX="122.0" layoutY="372.0" prefHeight="17.0" prefWidth="62.0" text="Height(cm)" />
+            <Label layoutX="122.0" layoutY="420.0" prefHeight="17.0" prefWidth="62.0" text="Weight(Kg)" />
+            <Button fx:id="BackBttn" layoutX="84.0" layoutY="464.0" mnemonicParsing="false" onAction="#BackToWelcome" prefHeight="33.0" prefWidth="92.0" text="Back" />
+         </children></AnchorPane>
+  </content>
+</TitledPane>
